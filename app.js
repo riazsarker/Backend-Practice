@@ -14,12 +14,11 @@ app.use(
 );
 app.use(cors({ }));
 
-// //Route Imports
-// const user = require("./backend/routes/authRoutes");
-// const subadmin = require("./backend/routes/hrRoutes");
-// const manager = require("./backend/routes/managerRoutes");
+//Route Imports
+const user = require("./backend/routes/userRoutes");
 
-// app.use("/api/v1", user);
+
+app.use("/api/v1", user);
 // app.use("/api/v1", subadmin);
 // app.use("/api/v1", manager);
 
